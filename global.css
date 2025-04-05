@@ -1,0 +1,430 @@
+/* ========================= */
+/*      Page Setting         */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #252829;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  flex: 1;
+}
+
+.horizontal-spacer {
+  background-color: #d0c900;
+  padding: 1vh;
+}
+
+.accent {
+  background-color: #38a3ea;
+  width: 100%;
+  padding: 1px;
+}
+
+h1 {
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 2vh 0;
+}
+
+h3 {
+  color: #e0e0e0;
+  font-size: 1.6em;
+  margin: 2vh 0;
+}
+
+p {
+  font-weight: 300;
+  margin: 1vh 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  padding: 0.3rem 1rem;
+  color: #d0c900;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: #d09900;
+}
+
+.in-line-link {
+  text-decoration: none !important;
+  text-transform: none !important;
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  letter-spacing: 0 !important;
+  color: #d0c900 !important;
+  background-color: transparent !important;
+}
+
+.in-line-link:hover {
+  color: #d09900 !important;
+}
+
+.in-line-link:visited {
+  color: #016fb8 !important;
+}
+
+/* ========================= */
+/*        Navigation         */
+/* ========================= */
+.navbar-custom {
+  background-color: #161616;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+  color: #f0f0f0;
+  display: block;
+  margin: 1vh 1vh;
+  
+}
+
+.navbar-brand {
+  text-align: left !important;
+  flex: 1;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+.nav-link {
+  font-weight: 500;
+  flex: 1;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.navbar-brand:hover,
+.nav-link:hover,
+.nav-link:focus-visible,
+.navbar-brand:focus-visible {
+  color: #38a3ea;
+  transition: 0.3s;
+}
+
+.footer {
+  background-color: #161616;
+  color: #f0f0f0;
+  padding: 1vh 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+/* ========================= */
+/*           Hero            */
+/* ========================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  background-color: #222222;
+  color: #e0e0e0;
+  background-image: url("imgs/Earth_From_Space.webp");
+  background-position: center 30%;
+  background-size: cover;
+  text-shadow: 0 0 5px black;
+}
+
+#Paleo-hero {
+  background-image: url("imgs/Paleozoic.jpg");
+  background-position: center;
+  margin-bottom: 1vh;
+}
+
+#Meso-hero {
+  background-image: url("imgs/Mesozoic.webp");
+  background-position: center 10%;
+  margin-bottom: 8vh;
+}
+
+#Cene-hero {
+  background-image: url("imgs/Cenozoic.jpg");
+  background-position: center 35%;
+  margin-bottom: 8vh;
+}
+  
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #d0c900;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-shadow: none;
+  display: inline;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: #38a3ea;
+}
+
+/* ========================= */
+/*         Content           */
+/* ========================= */
+.text-area {
+  padding: 5vh;
+  margin: 3vh auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.intro {
+  margin-bottom: 3vh;
+  text-indent: 2rem;
+}
+
+/* ========================= */
+/*         Timeline          */
+/* ========================= */
+#timeline-content {
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  margin: 5vh auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 60%;
+}
+.timeline h1 {
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.timeline h4 {
+  margin-top: 1vh;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #dddddd;
+}
+
+.timeline p {
+  font-family: 'Georgia', serif;
+}
+
+.timeline .event {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -220px;
+  color: rgba(255, 255, 255, 0.4);
+  content: attr(event-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9rem;
+  min-width: 120px;
+  max-width: 150px;
+}
+.timeline .event:after {
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+.timeline .sub-event {
+  padding-left: 20px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+}
+
+.timeline a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.3em;
+  padding: 0.3rem 1rem;
+  margin: 10px 100px;
+  background-color: #d0c900;
+  color: #000000;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.timeline a:hover {
+  color: #000000;
+  background-color: #38a3ea;
+}
+
+#Hadean {
+  border-left: 4px solid #fc1d00;
+}
+
+#Hadean .event:after {
+  box-shadow: 0 0 0 4px #fc1d00;
+}
+
+#Archean {
+  border-left: 4px solid #fca400;
+}
+
+#Archean .event:after {
+  box-shadow: 0 0 0 4px #fca400;
+}
+
+#Proterozoic {
+  border-left: 4px solid #fcf800;
+}
+
+#Proterozoic .event:after {
+  box-shadow: 0 0 0 4px #fce700;
+}
+
+#Phanerozoic {
+  border-left: 4px solid #00fc61;
+}
+
+#Phanerozoic .event:after {
+  box-shadow: 0 0 0 4px #00fc61;
+}
+
+#Paleozoic {
+  border-left: 4px solid #0097fc;
+}
+
+#Paleozoic .event:after {
+  box-shadow: 0 0 0 4px #0097fc;
+}
+
+#Mesozoic {
+  border-left: 4px solid #7700ff;
+}
+
+#Mesozoic .event:after {
+  box-shadow: 0 0 0 4px #7700ff;
+}
+
+#Cenozoic {
+  border-left: 4px solid #e000b0;
+}
+
+#Cenozoic .event:after {
+  box-shadow: 0 0 0 4px #e000b0;
+}
+
+/* ========================= */
+/*         Error 404         */
+/* ========================= */
+.error-container {
+  text-align: center;
+  border-radius: 8px;
+  padding: 22vh 5vh;
+  margin: 13vh auto;
+  height: 100%;
+  width: 80%;
+  max-width: 1000px;
+  background-image: url("imgs/Tansition_To_Land.png");
+  background-position: center;
+  background-size: cover;
+  color: #e0e0e0;
+  text-shadow: 0 0 20px black;
+}
+
+.error-button {
+  display: block;
+  padding: 10px 20px;
+  margin: 1vh auto;
+  text-decoration: none;
+  max-width: 500px;
+}
+
+.email-button {
+  display: block;
+  padding: 10px 20px;
+  margin: 1vh auto;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 3px solid #ffffff;
+  max-width: 500px;
+  text-shadow: 0 0 0 20px #000000;
+  color: #ffffff;
+}
+
+.email-button:hover {
+  background-color: #000000;
+  border: 3px solid #000000;
+  color: #ffffff;
+}
